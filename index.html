@@ -33,47 +33,50 @@
     <div class="container">
       <div class="grid text-center" style="position: relative; top: 100px;">
 
-        <div class="g-col-9" id="assignment" style="font-size: 25px; position: relative; right: 50px">
-          <h1><u>Integral Calculator</u></h1>
+        <div class="g-col-9" id="assignment">
+          <h1 id="inthead"><u>Integral Calculator</u></h1>
           <form onsubmit="return false">
-            (<sup>**</sup>Note: This intergral calculator is for single variable only)
+            <p id="intecalc">
+              (<sup>**</sup>Note: This intergral calculator is for single variable only)
+            </p>
             <div class="container">
-              <div class="row" style="text-align: left;" >
+              <div class="row" class="ent_func">
                 <div class="col">
-                  <label for="func" style="font-size: 21px;">Enter function with variable as x: </label>
+                  <label for="func" class="entfunc">Enter function with variable as x: </label>
                 </div>
 
                 <div class="col">
-                  <textarea name="func" id="func" cols="30" rows="5" style="background-color: #5b5e66; color: whitesmoke;"></textarea>
+                  <textarea name="func" id="func" class="textinput"></textarea>
                 </div>
               </div>
+              <br>
               
-              <div class="row" style="text-align: left;">
+              <div class="row boundl">
                 <div class="col">
                   <label for="lower_l">Lower Limit: </label>
                 </div>
 
-                <div class="col" style="position: relative; right: 20.5px;">
-                  <input type="number" id="lower_l" name="lower_l" style="background-color: #5b5e66; color: whitesmoke;">
+                <div class="col boundinp">
+                  <input type="number" id="lower_l" name="lower_l">
                 </div>
               </div>
               
-              <div class="row" style="text-align: left;">
+              <div class="row boundl">
                 <div class="col">
                   <label for="upper_l">Upper Limit: </label>
                 </div>
 
-                <div class="col" style="position: relative; right: 20.5px;">
-                  <input type="number" id="upper_l" name="upper_l" style="background-color: #5b5e66; color: whitesmoke;">
+                <div class="col boundinp">
+                  <input type="number" id="upper_l" name="upper_l">
                 </div>
               </div>
               <br>
-              <input type="submit" value="submit" type="submit" py-onClick="speak()" class="btn btn-primary btn-lg">
-              <input type="button" value="refresh" onclick="location.reload()" class="btn btn-primary btn-lg">
+              <input type="submit" value="submit" type="submit" py-onClick="speak()" class="btn btn-primary btn-lg buttclass">
+              <input type="button" value="refresh" onclick="location.reload()" class="btn btn-primary btn-lg buttclass">
             </div>
         </form>
         <br>
-        <div id="display" style="border:whitesmoke 3px solid"></div>
+        <div id="display" class="opdiv"></div>
 
         <py-script>
           from math import *
