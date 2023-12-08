@@ -2,7 +2,7 @@
 
 body{
     font-family:'Anonymous Pro', monospace;
-    background-color: #37393e; 
+    background-color: #161616; 
     color:whitesmoke;
 }
 
@@ -92,25 +92,25 @@ body{
 }
 
 a:link {
-    color: #9acd32;
+    color: 	#50C878;
     background-color: transparent;
     text-decoration: none;
 }
   
 a:visited {
-    color: #9acd32;
+    color: 	#50C878;
     background-color: transparent;
     text-decoration: none;
 }
   
 a:hover {
-    color: #9acd32;
+    color: 	#50C878;
     background-color: transparent;
     text-decoration: none;
 }
   
 a:active {
-    color: #9acd32;
+    color: 	#50C878;
     background-color: transparent;
     text-decoration: none;
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 </head>
 <body>
-    <nav class="navbar" data-bs-theme="dark" style="background-color: #3b4483">
+    <nav class="navbar" data-bs-theme="dark" style="background-color: #C84B31">
         <div class="container-fluid">
           Soham Kothari
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,8 @@
         <div class="g-col-9" id="assignment">
           <h1 id="inthead"><u>Integral Calculator</u></h1>
           <form onsubmit="return false">
-            <p id="intecalc">
-              (<sup>**</sup>Note: This intergral calculator is for single variable only)
+            <p id="intecalc" style="font-size: 15px;">
+              (<sup>**</sup>Note: This intergral calculator is for single variable only and to insert power variables like x<sup>2</sup> : x**2)
             </p>
             <div class="container">
               <div class="row" class="ent_func">
@@ -94,12 +94,15 @@
               tell=eval(func)
               phi+=w[i]*float(tell)
         
-            ans=((b-a)/2)*phi
+            ant=((b-a)/2)*phi
+            ans=str(ant)
             Element('display').write(f"The integration of given function is: {ans}")
         </py-script>
-
+        <br>
+        <div>
+          <h3>Github link for Data Science Assignment : <a href="https://github.com/Soham-KT/Data-Science-Assignment" target="_blank">GitHub</a></h3>
+        </div>
       </div>
-
         <div class="g-col-3" id="abt_me">
           <div class="card" style="width: 18rem;">
             <img src="images/me.jpeg" class="card-img-top" alt="me">
